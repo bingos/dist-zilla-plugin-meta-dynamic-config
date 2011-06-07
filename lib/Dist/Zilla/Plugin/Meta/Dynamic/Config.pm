@@ -40,4 +40,6 @@ L<Dist::Zilla>
 
 L<CPAN::Meta::Spec>
 
+L<Dist::Zilla::Plugin::FakeFaker>
+
 =cut
