@@ -16,6 +16,12 @@ no Moose;
 
 qq[I am an object in motion];
 
+=begin Pod::Coverage
+
+  metadata
+
+=end Pod::Coverage
+
 =pod
 
 =head1 SYNOPSIS
