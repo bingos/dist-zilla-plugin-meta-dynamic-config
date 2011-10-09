@@ -1,15 +1,16 @@
 package Dist::Zilla::Plugin::Meta::Dynamic::Config;
 
-# ABSTRACT: set dynamic_config to true in resultant META files
+# ABSTRACT: set dynamic_config in resultant META files
 
 use Moose;
-with 'Dist::Zilla::Role::MetaProvider';
 
-sub metadata {
-  return {
-    dynamic_config => 1,
-  };
-}
+has dynamic_config => (
+	is => 'ro',
+	isa => 'Bool',
+	default => 1,
+);
+
+with 'Dist::Zilla::Role::Meta::Dynamic::Config';
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
